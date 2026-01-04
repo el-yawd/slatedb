@@ -2,6 +2,7 @@
 resolver = "2"
 members = [
     "examples",
+    "lsm-vec",
     "slatedb",
     "slatedb-bencher",
     "slatedb-cli",

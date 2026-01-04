@@ -1,0 +1,28 @@
+[package]
+name = "lsm-vec"
+version.workspace = true
+edition.workspace = true
+repository.workspace = true
+license.workspace = true
+description = "LSM-VEC: Disk-based vector search with HNSW graph indexing on LSM-tree storage"
+
+[dependencies]
+# Workspace dependencies
+slatedb.workspace = true
+object_store.workspace = true
+tokio.workspace = true
+async-trait.workspace = true
+bytes.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+rand.workspace = true
+parking_lot.workspace = true
+
+# Additional dependencies for LSM-VEC
+bitvec = "1.0"
+ordered-float = "4"
+rand_distr = "0.5"
+
+[dev-dependencies]
+tempfile.workspace = true
+tokio-test.workspace = true
